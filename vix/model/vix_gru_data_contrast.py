@@ -71,6 +71,7 @@ for params in param_grid:
     print(f"GRU: hidden={params['hidden_size']}, layers={params['num_layers']}, lr={params['lr']}")
     print(f"MAE={mae:.4f}, MSE={mse:.4f}, MAPE={mape:.2f}%\n")
 
+    # Store results
     results.append({
         'Model': 'GRU',
         'hidden_size': params['hidden_size'],
