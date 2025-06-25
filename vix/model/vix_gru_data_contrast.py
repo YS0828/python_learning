@@ -6,7 +6,7 @@ from torch.utils.data import DataLoader, TensorDataset
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 import pandas as pd
 
-# Load data
+
 data = np.load('vix_data.npz')
 X_train, X_test = data['X_train'], data['X_test']
 y_train, y_test = data['y_train'], data['y_test']
